@@ -39,9 +39,7 @@ class Numeric
 		#check if user did this convertion through the same day
 		if @@cach.has_key?(k)
 			@@cach[k]
-			puts "enterd if"
 		else
-			puts "enterd else"
 			currency_1 = @@currencies[from]
 			currency_1 ||= @@currencies[(from.to_s+"s").to_sym]
 			currency_2 = @@currencies[to]
